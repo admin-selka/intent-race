@@ -1,0 +1,11 @@
+{
+  "name": "jev-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.mjs"
+  },
+  "dependencies": {
+    "ai": "^7.0.114"
+  }
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intent Race</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="brand">
+  <header class="top">
+    <div class="brand">
+      <h1>Intent <em>Race</em></h1>
+      <div class="meta">
+        <span><span id="metaCount">1,000</span> real keywords</span>
+        <span>4 intents · I C T N</span>
+        <span>one keyword per call · same concurrency</span>
+        <span class="pill" id="modePill"></span>
+      </div>
+    </div>
+
+    <div class="gap">
+      <div class="gap-label">Jev lead</div>
+      <div class="gap-value"><span id="gapKw">0</span><small> keywords</small></div>
+      <div class="gap-sub"><span id="gapX">–</span> faster · <span id="gapCost">–</span> cheaper per keyword</div>
+    </div>
+
+    <div class="controls">
+      <div class="seg" id="countSeg">
+        <button data-n="100">100</button>
+        <button data-n="500">500</button>
+        <button data-n="1000" class="on">1000</button>
+      </div>
+      <button class="btn ghost" id="resetBtn">Reset</button>
+      <button class="btn go" id="raceBtn">Race <kbd>space</kbd></button>
+    </div>
+  </header>
+
+  <main class="arena">
+    <section class="side jev" id="sideJev"></section>
+    <section class="side llm" id="sideLlm"></section>
+  </main>
+
+  <footer class="foot" id="footNote"></footer>
+
+  <script src="ui.js"></script>
+  <script src="live.js"></script>
+  <script src="sim.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
